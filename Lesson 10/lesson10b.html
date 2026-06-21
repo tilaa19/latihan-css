@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson10b</title>
+<style>
+.profile {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.desc,
+.status {
+  color: gray;
+  margin: 0;
+}
+
+.follow-btn {
+  background-color: rgb(24, 119, 242);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+    <div class="profiles">
+
+  <div class="profile">
+    <img class="profile-pic" src="kucing.jpg">
+
+    <div class="info">
+      <p class="name">oliver</p>
+      <p class="desc">the cat</p>
+      <p class="status">Popular</p>
+    </div>
+
+    <button class="follow-btn">Follow</button>
+  </div>
+
+  <div class="profile">
+    <img class="profile-pic" src="kucing2.jpg">
+
+    <div class="info">
+      <p class="name">Mimi</p>
+      <p class="desc">Sleepy Cat</p>
+      <p class="status">Popular</p>
+    </div>
+
+    <button class="follow-btn">Follow</button>
+  </div>
+
+  <div class="profile">
+    <img class="profile-pic" src="kucing3.jpg">
+
+    <div class="info">
+      <p class="name">Rex</p>
+      <p class="desc">Happy Bulldog</p>
+      <p class="status">Popular</p>
+    </div>
+
+    <button class="follow-btn">Follow</button>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson13d</title>
+<style>
+ body {
+  font-family: Arial;
+}
+
+.email {
+  width: 400px;
+  padding: 12px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.inbox-label {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.email-row {
+  display: flex;
+}
+
+.sender-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.sender-picture-container {
+  margin-right: 10px;
+}
+
+.email-content {
+  flex: 1;
+}
+
+.email-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sender-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.send-time {
+  color: gray;
+  font-size: 14px;
+}
+
+.subject {
+  font-weight: bold;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.message {
+  color: gray;
+}
+</style>
+</head>
+<body>
+<h1>Lesson 13d</h1>
+<div class="email">
+
+  <div class="inbox-label">
+    ALL INBOXES
+  </div>
+
+  <div class="email-row">
+
+    <div class="sender-picture-container">
+      <img class="sender-picture" src="kucing.jpg">
+    </div>
+
+    <div class="email-content">
+
+      <div class="email-header">
+        <div class="sender-name">
+          Chewy Promotions
+        </div>
+
+        <div class="send-time">
+          4:58 PM
+        </div>
+      </div>
+
+      <div class="subject">
+        Biggest sales of the year!
+      </div>
+
+      <div class="message">
+        Hey there! We're writing to tell you about our...
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

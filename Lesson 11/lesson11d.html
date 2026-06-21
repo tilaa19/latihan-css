@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>lesson11d</title>
+<style>
+p {
+  font-family: Arial;
+  margin: 0;
+}
+
+.friends-grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  column-gap: 20px;
+}
+
+.card {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.animal-picture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 8px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.mutual {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.friend-picture {
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.mutual-friends {
+  color: gray;
+  font-size: 14px;
+}
+
+.add-button {
+  background-color: rgb(24, 119, 242);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h1>Lesson 11d</h1>
+  <div class="friends-grid">
+
+    <div class="card">
+      <img class="animal-picture" src="kucing.jpg">
+
+      <div class="info">
+        <p class="name">Oliver</p>
+
+        <div class="mutual">
+          <img class="friend-picture" src="kucing2.jpg">
+          <p class="mutual-friends">2 mutual friends</p>
+        </div>
+
+        <button class="add-button">
+          Add Friend
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="animal-picture" src="kucing3.jpg">
+
+      <div class="info">
+        <p class="name">Mimi</p>
+
+        <div class="mutual">
+          <img class="friend-picture" src="kucing.jpg">
+          <p class="mutual-friends">3 mutual friends</p>
+        </div>
+
+        <button class="add-button">
+          Add Friend
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="animal-picture" src="kucing2.jpg">
+
+      <div class="info">
+        <p class="name">Rex</p>
+
+        <div class="mutual">
+          <img class="friend-picture" src="kucing3.jpg">
+          <p class="mutual-friends">4 mutual friends</p>
+        </div>
+
+        <button class="add-button">
+          Add Friend
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

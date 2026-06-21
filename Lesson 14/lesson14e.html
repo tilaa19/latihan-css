@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson14e</title>
+<style>
+body {
+  height: 3000px;
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 50px;
+  padding-right: 50px;
+
+  background-color: white;
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.right-section {
+  display: flex;
+}
+
+.add-friend-button {
+  background-color: rgb(24, 119, 242);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.message-button {
+  background-color: rgb(230, 230, 230);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Lesson 14e</h1>
+  <div class="header">
+    <div class="left-section">
+      <img class="profile-picture" src="kucing.jpg">
+      <div class="name">Oliver Cat</div>
+    </div>
+
+    <div class="right-section">
+      <button class="add-friend-button">
+        Add Friend
+      </button>
+
+      <button class="message-button">
+        Message
+      </button>
+    </div>
+  </div>
+</body>
+</html>

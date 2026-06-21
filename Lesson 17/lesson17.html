@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson17</title>
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  padding:70px 24px 0;
+  background:#f8f8f8;
+  font-family:Roboto,Arial,sans-serif;
+}
+
+/* Header */
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+
+  height:56px;
+  padding:0 20px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  background:white;
+  border-bottom:1px solid #d5d5d5;
+}
+
+.left-section,
+.middle-section,
+.right-section{
+  display:flex;
+  align-items:center;
+}
+
+.middle-section{
+  flex:1;
+  max-width:600px;
+  margin:0 40px;
+}
+
+.right-section{
+  gap:18px;
+}
+
+.logo{
+  height:24px;
+  margin-left:16px;
+}
+
+.icon{
+  width:24px;
+  height:24px;
+  cursor:pointer;
+}
+
+.search-bar{
+  flex:1;
+  height:36px;
+  padding:0 12px;
+  border:1px solid #c0c0c0;
+  border-radius:20px 0 0 20px;
+}
+
+/* Tooltip */
+.icon-container,
+.channel-picture-container{
+  position:relative;
+}
+
+.tooltip{
+  position:absolute;
+  bottom:-40px;
+
+  padding:6px 10px;
+  border-radius:4px;
+
+  background:gray;
+  color:white;
+
+  font-size:12px;
+  white-space:nowrap;
+
+  opacity:0;
+}
+
+.icon-container:hover .tooltip{
+  opacity:1;
+}
+
+/* Video */
+.video-grid{
+  display:flex;
+  justify-content:center;
+}
+
+.video-preview{
+  width:350px;
+  background:white;
+  padding:8px;
+  border-radius:12px;
+}
+
+.thumbnail{
+  width:100%;
+  border-radius:12px;
+}
+
+.video-info-grid{
+  display:grid;
+  grid-template-columns:32px 1fr;
+  gap:12px;
+  margin-top:10px;
+}
+
+.profile-picture{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.video-title{
+  margin:0 0 6px;
+}
+
+.video-author,
+.video-stats{
+  margin:0;
+  font-size:13px;
+  color:#606060;
+}
+
+/* Mini Profile */
+.mini-profile-card{
+  position:absolute;
+  top:40px;
+  left:50%;
+
+  display:flex;
+  gap:10px;
+  align-items:center;
+
+  padding:10px;
+  border-radius:12px;
+
+  background:white;
+  box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+  opacity:0;
+}
+
+.channel-picture-container:hover .mini-profile-card{
+  opacity:1;
+}
+
+.mini-card-avatar{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+}
+
+.video-link{
+  color:black;
+  text-decoration:none;
+}
+
+.video-title {
+  font-size: 14px;
+}
+
+.video-author,
+.video-stats {
+  font-size: 12px;
+}
+
+@media (min-width: 1000px) {
+  .video-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .video-author,
+  .video-stats {
+    font-size: 14px;
+  }
+}
+</style>
+</head>
+<body>
+<h1>Lesson 17</h1>
+    <div class="video-grid">
+
+  <div class="video-preview">
+    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+      <img src="thub.png" class="thumbnail">
+    </a>
+
+    <div class="video-info-grid">
+
+      <div class="channel-picture-container">
+        <img src="prfil.png" class="profile-picture">
+
+        <div class="mini-profile-card">
+          <img src="prfil.png" class="mini-card-avatar">
+
+        <div class="mini-card-info">
+            <p class="mini-card-name">Marques Brownlee</p>
+            <p class="mini-card-subs">21M subscribers</p>
+          </div>
+      </div>
+    </div>
+
+      <div>
+        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="video-link">
+          <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </p>
+        </a>
+
+        <p class="video-author">Marques Brownlee</p>
+        <p class="video-stats">3,4M views · 6 months ago</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
